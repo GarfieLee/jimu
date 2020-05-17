@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html , body{
+    background-color: black;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.video-background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.header{
+    display: none;
+    top: 0;
+    height: 300px;
+    position: relative;
+    background-color: black;
+    z-index: 99;
+    opacity: .5;
+}
+.header .btn{
+    right: 30px;
+    top: 30px;
+    position: fixed;
+}
+.header .btn img{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.header .menu{
+    width: 100%;
+    height: 19.6875vw;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+
+}
+.menu .menu-item{
+    display: block;
+    position: relative;
+    padding-right: 100px;
+    padding-top: 120px;
+}
+.menu-item .item-title{
+    color: white;
+    font-size: 1.04166667vw;
+    line-height: 1.04166667vw;
+    font-weight: 600;
+    text-align: center;
+}
+.menu-item .item-des{
+    color: hsla(0,0%,100%,.599);
+    font-size: .72916667vw;
+    line-height: .72916667vw;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10px;
+}
+.menu .menu-item img{
+    width: 70px;
+    height:70px;
+}
+.mainer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.mainer .logo{
+    left: 30px;
+    top: 30px;
+    position: fixed;
+    z-index: 100;
+}
+.mainer .logo img{
+    width: 9.4140625vw;
+    height: 2.265625vw;
+    cursor: pointer;
+}
+.mainer .menu-btn{
+    right: 3.17708333vw;
+    top: 2.60416667vw;
+    position: fixed;
+}
+.mainer .menu-btn:hover > header{
+    display: block;
+}
+.mainer .menu-btn img{
+    width: 29px;
+    height: 21px;
+    cursor: pointer;
+}
+.mainer .center-content{
+    position: absolute;
+    top: 36.85185185vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+.center-content .center-text{
+    display: inline-block;
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 3.64583333vw;
+    line-height: 3.64583333vw;
+    letter-spacing: .46875vw;    
+}
+.center-content .center-des{
+    margin-top: 2.40740741vh;
+    font-size: 1.14583333vw;
+    line-height: 1.14583333vw;
+    letter-spacing: .57291667vw;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    position: relative;
+}
+.mainer .download{
+    margin-top: 4.14814815vh;
+    display: flex;
+    position: relative;
+    width: 12.13541667vw;
+    height: 3.64583333vw;
+    font-size: 1.04166667vw;
+    line-height: 1.04166667vw;
+    font-weight: 600;
+}
+.mainer .download .btn{
+    width: 169px;
+    height: 49px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: inline-block;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.mainer .download .btn img{
+    /* display: block; */
+    margin-left: .78125vw;
+    width: 1.35416667vw;
+    height: 1.19791667vw;
+}
+.vertical-line{
+    position: fixed;
+    width: 1.04166667vw;
+    font-size: .625vw;
+    line-height: .625vw;
+    height: 100%;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    top: 37.31481481vh;
+    left: 3.22916667vw;
+    opacity: .5;
+    color: #fff;
+}
+.vertical-line .vertical-item{
+    display: inline-block;
+    position: relative;
+    padding: .78125vw 0;
+    letter-spacing: 1px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    line-height: 1.30208333vw;
+    font-size: .625vw;
+    padding: 1.75925926vh 0;
+}
+.footer .item{
+   color:hsla(0,0%,100%,.5);
+   text-decoration: none;
+   font-size: .625vw;
+   line-height: .625vw;
+   text-align: center;
+   position: relative;
+   padding: 0 15px;
+   font-weight: 500;
+}
+.footer .item:after{
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 1px;
+    background: hsla(0,0%,100%,.5);
+    height: 8px;
+    top: 50%;
+    margin-top: -4px;
+    right: 0;
+    color: hsla(0,0%,100%,.5);
+}
